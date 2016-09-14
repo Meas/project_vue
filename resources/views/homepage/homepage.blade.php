@@ -61,12 +61,17 @@
 	<!-- 	<tasks :list="chores"></tasks> -->
 	</div>
 	<template id="tasks_template">
-	<h1>My Tasks ( @{{ remaining }} )</h1>
-		<ul class="row">
+	<h1>My Tasks 
+	<span v-show="remaining">( @{{ remaining }} )</span>
+	</h1>
+		<ul class="row" v-show="list.length">
 			<li :class="{'completed' : task.completed}" v-for="task in list" @click='task.completed = !task.completed'>
 				@{{task.body}} 
+				<strong @click="deleteTask(task)">x</strong>
 			</li>
 		</ul>
+		<p v-else>No tasks yet!</p>
+		<button @click="clearCompleted">Clear completed!</button>
 		<br>
 	</template>
 <script src="{{ asset('js/homepage.js') }}"></script>
