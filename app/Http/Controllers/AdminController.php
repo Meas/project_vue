@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Task;
 
 class AdminController extends Controller
 {
@@ -23,6 +24,9 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getTasks() {
+        return Task::get();
+    }
     public function create()
     {
         //

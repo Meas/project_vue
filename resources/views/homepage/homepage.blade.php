@@ -56,15 +56,17 @@
 			</li>
 		</ul>
 	</div> -->
-	<div class="container" id="app">
-		<tasks :list="tasks"></tasks>
+
+
+		<div class="container" id="app">
+		<tasks></tasks>
 	<!-- 	<tasks :list="chores"></tasks> -->
 	</div>
 	<template id="tasks_template">
 	<h1>My Tasks 
 	<span v-show="remaining">( @{{ remaining }} )</span>
 	</h1>
-		<ul class="row" v-show="list.length">
+		<ul class="list-group" v-show="list.length">
 			<li :class="{'completed' : task.completed}" v-for="task in list" @click='task.completed = !task.completed'>
 				@{{task.body}} 
 				<strong @click="deleteTask(task)">x</strong>

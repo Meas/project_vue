@@ -18,6 +18,7 @@
 
         <!-- Javascript -->
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
 
         @yield('header')
     </head>

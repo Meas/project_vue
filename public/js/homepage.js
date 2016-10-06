@@ -1,7 +1,17 @@
 	Vue.component('tasks', {
-		props: ['list'],
+		/*props: ['list'],*/
 		template: '#tasks_template', 
-
+		data: function() {
+			return {
+				list: []
+			};
+		},
+		created: function() {
+			var vm = this;
+			$.getJSON('api/tasks', function(tasks) {
+				vm.list = tasks;
+			});
+		},
 		computed: {
 			remaining: function() {
 				var vm = this;
