@@ -11,10 +11,11 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link href="{{ asset('/css/fcss2.css') }}" rel="stylesheet" type="text/css" media="screen"/>
+       <!--  <link href="{{ asset('/css/fcss2.css') }}" rel="stylesheet" type="text/css" media="screen"/> -->
          <!-- <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" media="screen"/> -->
-        <link href="{{ asset('/css/app.css') }}" rel="stylesheet" type="text/css" media="screen"/>
+        <!-- <link href="{{ asset('/css/app.css') }}" rel="stylesheet" type="text/css" media="screen"/> -->
        <!--  <link href="{{ asset('assets/sass/app.scss') }}" rel="stylesheet" type="text/css" media="screen"/>  -->
+        <link href="{{ asset('/css/all.css') }}" rel="stylesheet" type="text/css" media="screen"/>
 
         <!-- Javascript -->
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>

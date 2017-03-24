@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 }); */
 Route::get('/', 'AdminController@index');
+Route::get('/passport', 'AdminController@passport');
+Route::get('test', 'AdminController@test');

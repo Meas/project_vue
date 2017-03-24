@@ -5767,3 +5767,25 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=app.css.map */
+
+.floatLeft {
+	width:33%;
+	height:500px;
+	line-height: 500px;
+	font-size: 26px;
+	float: left;
+	background-color: blue;
+	text-align: center;
+}
+.floatRight {
+	width:33%;
+	height:500px;
+	line-height: 500px;
+	font-size: 26px;
+	float: right;
+	background-color: red;
+	text-align: center;
+}
+.completed {text-decoration: line-through;}
+
+/*# sourceMappingURL=all.css.map */
